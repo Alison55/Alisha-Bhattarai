@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		.icon>i{
+			float: right;
+			margin: 10px;
+			top: 20px;
+		}
+		a, a:focus, a:active, a:hover, object, embed { outline: none; text-decoration: none; }
+:-moz-any-link:focus { outline: none; }
+input::-moz-focus-inner { border: 0; }
+:focus { outline: 0; }
+body { background: #333; }	
+.brand { padding: 10px 40px !important; }
+.navbar { border-bottom: 4px solid #888; }
+
+
+
+/* MEGA MENU STYLE
+********************************/ 
+.mega-menu {
+	padding: 10px 0px ! important;
+	width: 540px;
+  border-radius: 0;
+  margin-top: 0px;
+	}
+
+	.mega-menu li {
+		display: inline-block;
+		float: left;
+		font-size: 0.94rem;
+		padding: 3px 0px;
+		}
+
+		.mega-menu li.mega-menu-column {
+			margin-right: 20px;
+			width: 150px;
+			}
+
+			.mega-menu .nav-header {
+			padding: 0 !important;
+			margin-bottom: 10px;
+			display: inline-block;
+			width: 100%;
+			border-bottom: 1px solid #ddd;
+			}
+      .mega-menu img { padding-bottom: 10px;}
+
+
+
+
+
+
+
+/* Disable Toggle style
+********************************/  
+
+/* Dropdown Toggle on style */
+.navbar .nav li.dropdown.open > .dropdown-toggle, 
+.navbar .nav li.dropdown.active > .dropdown-toggle, 
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    background: inherit; /* Set to inherit when using mouse hover to open dropdown */
+    color: inherit;
+    }   
+    /* Toggle off style */
+    .navbar .nav li.dropdown.open.active > .dropdown-toggle,
+    .navbar .nav > li.dropdown > a:focus { 
+    background: inherit;
+    color: inherit;
+    }
+    /* Toggle hover */
+    .navbar .nav li.dropdown > .dropdown-toggle:hover,
+    .navbar .nav li.dropdown.open > .dropdown-toggle:hover {
+    background-color: #DDDDDD;
+    }
+            
+            
+    /* Toggle caret*/
+    .navbar .nav li.dropdown > .dropdown-toggle .caret {
+        border-bottom-color:;
+        border-top-color:;
+        }
+        /* Toggle caret hover */
+        .navbar .nav li.dropdown > a:hover .caret, 
+        .navbar .nav li.dropdown > a:focus .caret {
+        border-bottom-color: #333;
+        border-top-color: #333;
+        }
+        /* Toggle caret active */
+        .navbar .nav li.dropdown.open > .dropdown-toggle .caret, 
+        .navbar .nav li.dropdown.active > .dropdown-toggle .caret, 
+        .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
+        border-bottom-color:#333;
+        border-top-color: #333;
+        }
+
+
+
+/* Hover style
+********************************/ 
+.navbar .nav > li > a, .mega-menu a
+ { 
+  -webkit-transition: all 200ms ease;
+	 -moz-transition: all 200ms ease;
+	  -ms-transition: all 200ms ease;
+	   -o-transition: all 200ms ease;
+	      transition: all 200ms ease; 
+	
+		 /* -webkit-transform: translate3d(0, 0, 0); Webkit Hardware Acceleration*/ 
+	     -webkit-backface-visibility: hidden; /* Safari Flicker Fix #2 */
+	     -webkit-transform: translateZ(0);
+}	
+	</style>
+</head>
+<body>
+	
+ <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>My Portfolio</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span> 
+      <button class="w3-button w3-black">ALL</button>
+      <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
+      <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>OUR WORKS</a>
+       <a href="#about" onclick="w3_close()" button class="w3-button w3-white "><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+       <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-top"></i>CONTACT</a>
+      
+      <a href="#about" onclick="w3_close()" button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Photos</button>
+      
+    
+    <div class="w3-panel w3-large w3-margin-top icon">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</div>
+</div>
+  </header>
+</section>
+<header class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+		<div class="container">
+        
+            <!-- Mobile toggle button -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+
+            <!-- Logo -->
+            <a class="brand" href="#"><b>LOGO</b></a>
+        
+            <!-- Navigation -->
+            <nav class="nav-collapse collapse">
+                <ul class="nav">
+                
+				    <li><a href="#top">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mega Menu <b class="caret"></b></a>                      
+
+						<ul class="dropdown-menu mega-menu">
+    
+						    <li class="mega-menu-column">
+						    <ul>
+						        <li class="nav-header">Mega menu 1</li>
+						        <img src="http://placehold.it/150x120">
+								<li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						    </ul>
+						    </li>    
+        
+						    <li class="mega-menu-column">
+						    <ul>
+						    <li class="nav-header">Mega menu 2</li>
+						        <img src="http://placehold.it/150x120">
+								<li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						    </ul>
+						    </li> 
+
+						    <li class="mega-menu-column">
+						    <ul>                            
+						    <li class="nav-header">Mega menu 3</li>
+						        <img src="http://placehold.it/150x120">
+								<li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						    </ul>
+						    </li> 
+							
+						</ul><!-- dropdown-menu -->
+						
+					</li><!-- /.dropdown -->
+				        
+                    <li><a href="#about">About Us</a></li>                                                                               
+                    <li><a href="#pricing">Our Pricing</a></li> 
+                    <li><a href="#team">Our Team</a></li> 
+                    <li><a href="#contact">Contact</a></li>                         
+                
+				</ul><!-- /.nav -->           
+            </nav><!--/.nav-collapse -->
+                    
+        </div><!-- /.container -->
+    </div><!-- /.nav-inner -->
+</header>
+<script>
+	jQuery(document).ready(function(){
+    $(".dropdown").hover(
+        function() { $('.dropdown-menu', this).fadeIn("fast");
+        },
+        function() { $('.dropdown-menu', this).fadeOut("fast");
+    });
+});
+</script>
+
+</body>
+</html>

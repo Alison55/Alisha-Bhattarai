@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet"  href="css/bootstrap.css">
+	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<title></title>
+	<style>
+
+
+		.content-section .thumbnail { position: relative; overflow: hidden; cursor: pointer; }
+.content-section .thumbnail * { transition: all .25s; }
+.content-section .thumbnail h4 { font-size: 19px; font-weight: 400; }
+.content-section .thumbnail p { line-height: 24px; }
+.content-section .thumbnail:hover h4, .content-section .thumbnail:hover p { color: #AFAFAF; }
+.content-section .thumbnail:hover img { opacity: 0.25;  }
+.content-section .thumbnail:after { font-family: 'FontAwesome'; content: '\f121'; color: #FFF; font-size: 48px; line-height: 80px; top: 70%; position: absolute; text-align: center; display: inline-block; width: 100%; transition: all .35s; opacity: 0; width: 86px; height: 86px; margin-left: auto; margin-right: auto; left: 0; right: 0; border-radius: 50%; background: transparent; border:3px solid transparent; }
+.content-section .thumbnail:hover:after { top: 25%; opacity: 1; color: #FFFFFF; background: #AF6204; border:3px solid #FFFFFF; }
+.jumbotron {
+  background-color: #222323;
+  padding: 80px;
+}
+/* I looked through Bootstrap's css file to fin the color for the navbar-inverse class and changed it a bit */
+
+
+}
+#about{
+  height:400px;
+  font-family: Arial;
+  text-align: center;
+  font-size:1.5;
+  padding:35px;
+  margin:100px;40px;100px;40px;
+}
+.sec-about a {
+  color: #000;
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+}
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+
+// Accordion Height
+$a-height: 250px;
+
+// Position text along bottom
+$text-offset: $a-height - 90;
+
+// Page Title
+h1 {
+  
+  text-align:center;
+  font-family:Montserrat,sans-serif;
+  color:#333;
+
+}
+
+.accordion {
+
+  width:100%;
+  max-width:1080px;
+  height:$a-height;
+  overflow:hidden;
+  margin:50px auto;
+
+  ul {
+
+    width:100%;
+    display:table;
+    table-layout:fixed;
+    margin:0;
+    padding:0;
+
+    li {
+
+      display:table-cell;
+      vertical-align:bottom;
+      position: relative;
+      width:16.666%; // 6 into 100
+      height:$a-height;
+
+      background-repeat:no-repeat;
+      background-position:center center;
+
+      transition:all 500ms ease;
+
+      div {
+        
+        display:block;
+        overflow:hidden;
+        width:100%;
+
+        a {
+          
+          display:block;
+          height:$a-height;
+          width:100%;
+
+          position:relative;
+          z-index:3;
+          vertical-align:bottom;
+          padding:15px 20px;
+          box-sizing:border-box;
+          color:#fff;
+          text-decoration:none;
+          font-family:Open Sans, sans-serif;
+          
+          transition:all 200ms ease;
+
+          * {
+
+            opacity:0;
+            margin:0;
+            width:100%;
+            text-overflow:ellipsis;
+            position:relative;
+            z-index:5;
+            
+            white-space:nowrap;
+            overflow:hidden;
+            
+            -webkit-transform:translateX(-20px);
+            transform:translateX(-20px);
+
+            -webkit-transition:all 400ms ease;
+            transition:all 400ms ease;
+
+          }
+
+          h2 {
+
+            font-family:Montserrat,sans-serif;
+            text-overflow:clip;
+            font-size:24px;
+            text-transform:uppercase;
+            margin-bottom:2px;
+            
+            top:$text-offset;
+
+          }
+          
+          p {
+            
+            top:$text-offset;
+            font-size:13.5px;
+            
+          }
+
+        }
+
+      }
+
+    }
+    
+    // Background images
+    li:nth-child(1) { background-image:url('arch4.jpg'); }
+    li:nth-child(2) { background-image:url('http://michael-ferry.com/assets/accordion2.jpg'); }
+    li:nth-child(3) { background-image:url('http://michael-ferry.com/assets/accordion3.jpg'); }
+    li:nth-child(4) { background-image:url('http://michael-ferry.com/assets/accordion4.jpg'); }
+    li:nth-child(5) { background-image:url('http://michael-ferry.com/assets/accordion5.jpg'); }
+    li:nth-child(6) { background-image:url('http://michael-ferry.com/assets/accordion6.jpg'); }
+
+    &:hover li,
+    &:focus-within li { width:8%; }
+    
+    li:focus {
+      outline: none;
+    }
+
+    &:hover li:hover,
+    // allow users to tab through active slides
+    li:focus,
+    &:focus-within li:focus {
+
+      width:60%;
+
+      a {
+        
+        background:rgba(0,0,0,.4);
+        
+        * {
+          
+          opacity:1;
+          -webkit-transform:translateX(0);
+          transform:translateX(0);
+        
+        }
+      
+      }
+
+    }
+    
+    &:hover li {
+      width: 8% !important;
+      
+      a * { opacity: 0 !important; }
+    }
+    
+    &:hover li:hover {
+      width:60% !important;
+
+      a {
+        
+        background:rgba(0,0,0,.4);
+        
+        * {
+          
+          opacity:1 !important;
+          -webkit-transform:translateX(0);
+          transform:translateX(0);
+        
+        }
+      
+      }
+    }
+
+  }
+
+}
+
+// Stack items
+@media screen and (max-width: 600px) {
+  
+  // IE gets fussy if this isn't here
+  body { margin:0; }
+  
+  .accordion {
+    
+    height:auto;
+    
+    ul,ul:hover {
+      
+      li,li:hover {
+        
+        position:relative;
+        display:table;
+        table-layout:fixed;
+        width:100%;
+        
+        -webkit-transition:none;
+        transition:none;
+        
+      }
+      
+    }
+    
+  }
+
+}
+
+.about {
+  
+  text-align:center;
+  font-family:'Open Sans', sans-serif;
+  font-size:12px;
+  color:#666;
+  
+  a {
+    
+    color:blue;
+    text-decoration:none;
+    
+    &:hover { text-decoration:underline; }
+    
+  }
+  
+}
+
+
+		</style>
+	</head>
+		<body>
+			
+			 <div id="portfolio" class="content-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>PORTFOLIO</h1>
+          <p class="lead">Below you'll find some of my recent work.</p>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="https://placeimg.com/768/456/people/grayscale" alt="Project Dummy">
+            <div class="caption">
+              <h4>Sample Project #1</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="https://placeimg.com/768/456/nature/grayscale" alt="Project Dummy">
+            <div class="caption">
+              <h4>Sample Project #2</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="https://placeimg.com/768/456/people/grayscale" alt="Project Dummy">
+            <div class="caption">
+              <h4>Sample Project #3</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="https://placeimg.com/768/456/tech/grayscale" alt="Project Dummy">
+            <div class="caption">
+              <h4>Sample Project #4</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="https://placeimg.com/768/456/animals/grayscale" alt="Project Dummy">
+            <div class="caption">
+              <h4>Sample Project #5</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <h1>Responsive Accordion</h1>
+<div class="accordion">
+  <ul>
+    <li tabindex="1">
+      <div>
+        <a href="#">
+          <h2>Lorem Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </a>
+      </div>
+    </li>
+    <li tabindex="2">
+      <div>
+        <a href="#">
+          <h2>Lorem Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </a>
+      </div>
+    </li>
+    <li tabindex="3">
+      <div>
+        <a href="#">
+          <h2>Lorem Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </a>
+      </div>
+    </li>
+    <li tabindex="4">
+      <div>
+        <a href="#">
+          <h2>Lorem Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </a>
+      </div>
+    </li>
+    <li tabindex="5">
+      <div>
+        <a href="#">
+          <h2>Lorem Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </a>
+      </div>
+    </li>
+    <li tabindex="6">
+      <div>
+        <a href="#">
+          <h2>Lorem Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </a>
+      </div>
+    </li>
+  </ul>
+</div>
+<p class="about">
+  By <a href="http://michaelferry.com/">Michael Ferry</a>
+</p>
+</div>
+</body>
+</html>

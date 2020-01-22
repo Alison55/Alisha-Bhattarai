@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>animation learning</title>
+	<style type="text/css">
+		div {
+width:600px;
+height:220px;
+background: linear-gradient(top, blue, green);
+background: -moz-linear-gradient(top, blue, green);
+background: -webkit-linear-gradient(top, blue, green);
+}
+/*initial properties*/
+.f_wheel {
+position:absolute;
+top:160px;
+left:190px;
+}
+.b_wheel {
+position:absolute;
+top:160px;
+left:50px;
+}
+/*bus properties*/
+.bus {
+position:absolute;
+top:50px;
+left:30px;
+
+/*animations*/
+
+}
+animation: moveBus 5s ease-in-out forwards;
+-moz-animation: moveBus 5s ease-in-out forwards;
+-webkit-animation: moveBus 5s ease-in-out forwards;
+}
+/*wheel animation*/
+.f_wheel, .b_wheel {
+animation: spinWheel 5s ease-in-out forwards;
+-moz-animation: spinWheel 5s ease-in-out forwards;
+-webkit-animation: spinWheel 5s ease-in-out forwards;
+}
+keyframes moveBus {
+from { transform: translateX(0px); }
+to { transform: translateX(300px); }
+}
+@-moz-keyframes moveBus {
+from { -moz-transform: translateX(0px); }
+to { -moz-transform: translateX(300px); }
+}
+@-webkit-keyframes moveBus {
+from { -webkit-transform: translateX(0px); }
+to { -webkit-transform: translateX(300px); }
+}
+@keyframes spinWheel {
+from { transform: translateX(0px) rotate(0deg); }
+to { transform: translateX(300px) rotate(2880deg); }
+}
+@-moz-keyframes spinWheel {
+from { -moz-transform: translateX(0px) rotate(0deg); }
+to { -moz-transform: translateX(300px) rotate(2880deg); }
+}
+@-webkit-keyframes spinWheel {
+from { -webkit-transform: translateX(0px) rotate(0deg); }
+to { -webkit-transform: translateX(300px) rotate(2880deg); }
+}
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<dir>
+		<img class="bus" src="d1.png"/>
+<img class="b_wheel" src="wheel.png"/>
+<img class="f_wheel" src="wheel.png"/>
+</div>
+	</dir>
+
+</body>
+</html>

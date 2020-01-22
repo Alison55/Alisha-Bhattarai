@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sliding divs</title>
+	<style>
+		div{
+			width: 150px;
+			height: 300px;
+			background-color: black;
+			border-radius: 10px;
+			font-family: Arial, Helvetica, sans-serif;
+			overflow: hidden;
+			float: left;
+			margin: 0 5px;
+			text-align: center;
+			transition: width 1s;
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<div id="div1" onclick="div1()">
+		<h1>Himalayan</h1>
+		<hr>
+		<p style="color: blue;"><i>The himalayan,or himalaya lies between 5000 to 8000m in height</i> </p>
+		3
+	</div>
+	<div id="div2" onclick="div2()">
+		<h1>alps</h1>
+		<hr>
+		<p>the alps</p>
+	</div>
+	<div id="div3" onclick="div3()">
+		<h1>mountain</h1>
+		<hr>
+		<p>tall mountain</p>
+	</div>
+	<div id="div4" onclick="div4()">
+		<h1>terai</h1>
+		<hr>
+		<p>plain surface</p>
+
+	</div>
+	<script>
+		var a=document.getElementById('div1');
+		var b=document.getElementById('div2');
+		var c=document.getElementById('div3');
+		var d=document.getElementById('div4');
+		function div1(){
+			/*color is capital*/
+			
+			a.style.backgroundColor="red";
+			b.style.backgroundColor="black";
+			c.style.backgroundColor="black";
+			d.stylebackgroundColor="black";
+			a.style.width="900px";
+			b.style.width="100px";
+			c.style.width="100px";
+			d.style.width="100px";
+
+		}
+		function div2(){
+			b.style.backgroundColor="red";
+			a.style.backgroundColor="black";
+			c.style.backgroundColor="black";
+			d.stylebackgroundColor="black";
+			b.style.width="900px";
+			a.style.width="100px";
+			c.style.width="100px";
+			d.style.width="100px";
+
+		}
+		function div3(){
+			c.style.backgroundColor="red";
+			a.style.backgroundColor="black";
+			b.style.backgroundColor="black";
+			d.stylebackgroundColor="black";
+			c.style.width="300px";
+			a.style.width="100px";
+			b.style.width="100px";
+			d.style.width="100px";
+
+		}
+		function div4(){
+			d.style.backgroundColor="red";
+			a.style.backgroundColor="black";
+			b.style.backgroundColor="black";
+			c.style.backgroundColor="black";
+			d.style.width="900px";
+			a.style.width="100px";
+			b.style.width="100px";
+			c.style.width="100px";
+		}
+	</script>
+
+
+</body>
+</html>

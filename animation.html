@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>animation</title>
+	<style >
+		div{
+			width: 100px;
+			height: 100px;
+			background: red;
+			animation-name: width;
+			animation-duration: 10s;
+		}
+		@keyframes width{
+			/*from{ background: red;}*/
+			/*to{background: blue;}*/
+			0%{background: blue;}
+			10%{background: red;}
+			20%{background: pink;}
+			30%{background: yellow;}
+			40%{background:brown;}
+			50%{background: violet;}
+			60%{background: orange;}
+			70%{background: maroon;}
+			80%{background: peru;}
+			90%{background: green;}
+			100%{background: blue;}
+
+		}
+		@keyframes width{
+			0%{width: 100px; background: red;}
+			50%{width: 100px; background: blue;}
+			0%{width: 100px; background: red;}
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+
+</body>
+</html>

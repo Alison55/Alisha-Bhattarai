@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="demo"></p>
+	<ul type="none">
+		<li><input type="checkbox" name="ali" value="bmw">bmw</li>
+		<li><input type="checkbox" name="ali" value="volva">volva</li>
+		<li><input type="checkbox" name="ali" value="buggati">buggati</li>
+		<li><input type="checkbox" name="ali" value="ford">ford</li>
+		<li><input type="checkbox" name="ali" value="ferrari">ferrari</li>
+		<li><input type="checkbox" name="ali" value="nano">nano</li>
+		<li><input type="checkbox" name="ali" value="hundai">hundai</li>
+		<li><input type="checkbox" name="ali" value="tata">tata</li>
+	<button type="button" onclick="checked()">click here </button>
+	<p id="demo"></p>
+	<script>
+		var mountains=["himalayan","hilly","terai"];
+	document.getElementById("demo").innerHTML = mountains;
+		function myFunction() {
+ mountains.reverse();
+document.getElementById("demo").innerHTML = mountains;}
+function checked(){
+	var items=document.getElementByName("ali");
+	var text="";
+	for (var i = 0; i < items.length; i++) {
+		if(items[i].type=='checkbox' && items[i].checked==true)
+			text+=items[i].value + " ";
+		items[i].checked=false;}
+
+	
+
+		document.getElementById("demo").innerHTML=text;
+	}
+
+	</script>
+}
+
+</body>
+</html>
+
+<header>
+  <h1>
+                Navigation Animation
+            </h1>
+  <span>
+                Test of navigation animation
+            </span>
+</header>

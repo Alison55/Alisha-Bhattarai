@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div style="margin-left:30%;margin-top:10%;">
+<input id="calc">
+<button onclick="anybutton('add')">+</button>
+<button onclick="anybutton('sub')">-</button>
+<button onclick="anybutton('multiply')">*</button>
+<button onclick="show()">=</button>
+
+</div>
+</body>
+
+<script type="text/javascript">
+	function anybutton(opr) {
+		firstnum=document.getElementById("calc").value;
+		document.getElementById("calc").value=""
+		method=opr;}
+
+	function show() {
+
+		secnum=document.getElementById("calc").value;
+		if (method=="add"){document.getElementById("calc").value= Number(firstnum)+ Number(secnum);}
+			else if (method=="sub"){document.getElementById("calc").value= Number(firstnum)- Number(secnum);}
+		else if(method=="multiply"){document.getElementById("calc").value= Number(firstnum)* Number(secnum);}
+	}
+	
+
+</script>
+</html>

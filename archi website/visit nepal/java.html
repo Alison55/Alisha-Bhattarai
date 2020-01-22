@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <input id="numb">
+    </form>
+    <button onclick="myFunction()">click here </button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+
+
+
+            var x = document.getElementById("numb").value;
+
+
+            if (x >= 18) {
+                text = "you can vote";
+            } else {
+                text = "you cannot vote";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+    </form>
+</body>
+
+</html>

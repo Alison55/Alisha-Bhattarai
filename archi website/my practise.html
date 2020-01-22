@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/04e0366437.js" crossorigin="anonymous"></script>
+	<title>PB assosiate</title>
+	<style>
+    body {
+    overflow-x: hidden;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+    .navbar-default {
+    border-color: transparent;
+    background-color: #a19678;
+}
+
+.navbar-default .navbar-brand {
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    color: #1ee2e7;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: #fec503;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: rgba(255,255,255,.02);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #1ee2e7;
+    background-color: #1ee2e7;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #1ee2e7;
+}
+
+.navbar-default .nav li a {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    outline: 0;
+    color: #1ee2e7;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #fff;
+    background-color: #1ee2e7;
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #17d0d5;
+}
+header {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url(cover.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+header .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 22px;
+}
+
+header .intro-text .intro-heading {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+@media(min-width:768px) {
+    header .intro-text {
+        padding-top: 300px;
+        padding-bottom: 200px;
+    }
+
+    header .intro-text .intro-lead-in {
+        margin-bottom: 25px;
+        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+    }
+
+    header .intro-text .intro-heading {
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+    }
+}
+section {
+    padding: 100px 0;
+    background-color: #dae3dc;
+}
+section h2.section-heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+section h3.section-subheading {
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+@media(min-width:768px) {
+    section {
+        padding: 150px 0;
+    }
+}
+section#about{
+   position: relative;
+  background-color: #cce6d3;
+}
+.sec-about a {
+ 
+  color: #000;
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+}
+
+.service-heading {
+    margin: 15px 0;
+    text-transform: none;
+}
+.content-section .thumbnail { position: relative; overflow: hidden; cursor: pointer; }
+.content-section .thumbnail * { transition: all .25s; }
+.content-section .thumbnail h4 { font-size: 19px; font-weight: 400; }
+.content-section .thumbnail p { line-height: 24px; }
+.content-section .thumbnail:hover h4, .content-section .thumbnail:hover p { color: #AFAFAF; }
+.content-section .thumbnail:hover img { opacity: 0.25;  }
+.content-section .thumbnail:after { font-family: 'FontAwesome'; content: '\f121'; color: #FFF; font-size: 48px; line-height: 80px; top: 70%; position: absolute; text-align: center; display: inline-block; width: 100%; transition: all .35s; opacity: 0; width: 86px; height: 86px; margin-left: auto; margin-right: auto; left: 0; right: 0; border-radius: 50%; background: transparent; border:3px solid transparent; }
+.content-section .thumbnail:hover:after { top: 25%; opacity: 1; color: #FFFFFF; background: #AF6204; border:3px solid #FFFFFF; }
+section#contact {
+    background-color: #222;
+    background-image: url(https://unsplash.imgix.net/44/C3EWdWzT8imxs0fKeKoC_blackforrest.JPG?q=75&fm=jpg&auto=format&s=986aaa92169d4e97975fa66ebd60bafd);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#contact .section-heading {
+    color: #fff;
+}
+
+section#contact .form-group {
+    margin-bottom: 25px;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+    padding: 20px;
+}
+
+section#contact .form-group input.form-control {
+    height: auto;
+}
+
+section#contact .form-group textarea.form-control {
+    height: 236px;
+}
+
+section#contact .form-control:focus {
+    border-color: #1ee2e7;
+    box-shadow: none;
+}
+
+section#contact::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact::-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-ms-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact .text-danger {
+    color: #e74c3c;
+}
+
+.alisha {
+    margin: auto;
+    margin-top: -78px;
+    
+    font-family: "Lato";
+    letter-spacing:1px;
+    font-weight: lighter;
+    text-align: justify;
+    width: 480px;
+    padding-top:25px;
+    padding-right:25px;
+    padding-left:25px;
+    border: 2px solid white;
+    border-style:none;
+
+    border-radius: 5px;
+    background-color: ;#34495e; #99CCCC;
+    
+  
+    
+    color: grey;white;#7f8c8d;black;white;
+}
+.pri {
+  position: relative;
+  width: 50%;
+width: 200px;
+border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+.parent{
+      width: 350px;
+      height: 300px;
+      border: 2px solid black;
+      perspective: 700px;
+      position: relative;
+      top: 400px;
+      left: 1000px;
+    }
+    .simple{
+      height: 300px;
+      width: 250px;
+      background: #d8e3db;
+      transition: transform 3s;
+      transform: rotateY(0deg);
+      backface-visibility: hidden;
+      position: absolute;
+      /*transform-origin: 0% 0%;*/
+      
+    }
+    .backface{
+      height: 300px;
+      width: 250px;
+      background: #edfaf1;
+      transition: transform 3s;
+      transform: rotateY(180deg);
+      backface-visibility: hidden;
+      position: absolute;
+    }
+    .parent:hover .simple{
+      transform: rotateY(100deg);
+    }
+    .parent:hover .backface{
+      transform: rotateY(360deg);
+    }
+    img{
+      width: 100%;
+      height: 100%;
+    }
+
+
+
+
+	</style>
+</head>
+<body>
+<div class="container-fluid p-2 bg-secondary">
+	<div class="row text-white text-center">
+		<div class="col-sm-4 "><span class="glyphicon glyphicon-envelope">9867087973</span></div>
+		<div class="col-sm-4">bhattraialisha64@gmail.com</div>
+		<div class="col-sm-4">Sainamaina-04 Murgiya</div>
+
+	</div>
+</div>
+<body id="page-top" class="index" data-pinterest-extension-installed="cr1.3.4">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light " >
+
+  <a class="navbar-brand ml-5" href="#"><img src="laa.jpg" width="30px" height="30px"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse ml-5 font-weight-bold" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" class="navbars" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" class="navbars" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" class="navbars" href="#">Recent work</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" class="navbars" href="#testimonials">Client testimonial</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" class="navbars" href="#contact">Contact us</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" class="navbars" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Our services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Exterior Design</a>
+          <a class="dropdown-item" href="#">3D Design</a>
+          <a class="dropdown-item" href="#">2D Plan</a>
+          <a class="dropdown-item" href="#">Graphic Design</a>
+          <a class="dropdown-item" href="#">Model making</a>
+          <div class="dropdown-divider">Exterior Design</div>
+          <a class="dropdown-item" href="#">Visual animation</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" class="navbars" href="#"></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+     <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Hello Everybody</div>
+                <div class="intro-heading">welcome to our page</div>
+                <a href="#portfolio" class="page-scroll btn btn-xxl btn-primary">Our services</a>
+            </div>
+        </div>
+    </header>
+    <section id="about" class="sec-about">
+      
+   <div class="alisha">
+  <h4 class="text-center mt-3"><strong>About me</strong></h4>
+ 
+  
+    <br><br><br><br>
+    <hr class="pipi">
+    <p>  <center> Hi there!</center></p> <p>Welcome to my future portofolio where I'll showcase most of my work. Have a nice experience while browsing at this page.
+    <br><br>
+    Hi, my name is prakriti bhattarai and I am a professional Architect and  Designer based in Nepal. I'm currently in <a href='https://en.wikipedia.org/wiki/Nepal'>Nepal</a> for my end-studies, i studies in my country must  renowned T.U college <a href='https://pcampus.edu.np/'>Pulchowk</a> .
+    
+    I love crafting beautiful Designe in 2D, 3D and hand making. My other skills include model making, Photoshop .
+    <br><br>
+     You can grab my CV in
+            <a href="#">English</a> or <a href="#">Nepal</a> version. If you want to hire me or just to talk, <a class="js-connect" href="#footer">connect</a> with me.</p>
+
+</p>
+     <p style="text-align:right">an Aspiring front-end developer.</p>
+     <p style="text-align:right">an Aspiring 2D designer.</p>
+    <hr class="pipi">
+    <hr class="pipi">
+    <br>
+    <p style="text-align:center"><strong>Wanna drop a line?</strong></p>
+</div>
+
+<br>
+<form style="text-align:center" action="#" method="POST" name="my_form">
+  <textarea name="essay" rows="10" cols="80"> </textarea>
+  <br>
+  <input type="submit" value="Send">
+</form>
+<br>
+<br>
+</section>
+
+
+  <div id="portfolio" class="content-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+           <h4 class="text-center mt-3"><strong>services we provide</strong></h4>
+      <hr />
+          <p class="lead">Below you'll find some of my recent work.</p>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="https://placeimg.com/768/456/nature/grayscale" alt="Project Dummy">
+            <div class="caption">
+              <h4>Sample Project #1</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="https://placeimg.com/768/456/nature/grayscale" alt="Project Dummy">
+            <div class="caption">
+              <h4>Sample Project #2</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="https://placeimg.com/768/456/people/grayscale" alt="Project Dummy">
+            <div class="caption">
+              <h4>Sample Project #3</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="https://placeimg.com/768/456/tech/grayscale" alt="Project Dummy">
+            <div class="caption">
+              <h4>Sample Project #4</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="https://placeimg.com/768/456/animals/grayscale" alt="Project Dummy">
+            <div class="caption">
+              <h4>Sample Project #5</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="https://placeimg.com/768/456/arch/grayscale" alt="Project Dummy">
+            <div class="caption">
+              <h4>Sample Project #1</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+ <section id="testimonials" class="sec-testimonials">
+  <div class="container">
+   
+     <h4 class="text-center mt-3"><strong>Client said</strong></h4>
+      <hr />
+
+      <div class="row">
+        <div class="col-sm-4">
+          <p class="text-center">"Prakriti did great job when designing our hotel. It was pleasure to work with hir and I'm sure we will hire hir again."</p>
+
+          <p class="text-right">&mdash; Marc Andressen</p>
+        </div>
+
+        <div class="col-sm-4">
+          <p class="text-center">"Prakriti proved to be truly creative designe who is able to create just stunning design I immediately fell in love with!"</p>
+
+          <p class="text-right">&mdash; Emily Cooper</p>
+        </div>
+
+        <div class="col-sm-4">
+          <p class="text-center">"I have worked with several different people and it always seemed like a pain—luckily I found prakriti bhattarai. Thank you prakriti!"</p>
+
+          <p class="text-right">&mdash; Scott Grubber</p>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+ 
+
+ <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required="" data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required="" data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn  btn-secondary btn-xxl"><strong>Send Message</strong></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id= Location>
+   <div class="container-fluid" style="margin-bottom: 20px;">
+     <h3 style="text-align: center;"> Our Location</h3>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.977121510946!2d83.33959831493043!3d27.68710198280027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996895958bd5af9%3A0x919a5f02bb1bb3e6!2sMurgiya%20Bazaar!5e0!3m2!1sen!2snp!4v1574668307791!5m2!1sen!2snp" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+  </div>
+</div>
+</section>
+
+
+</body>
+</html>

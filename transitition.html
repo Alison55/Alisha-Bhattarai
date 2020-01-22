@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>transition</title>
+	<style >
+		div{
+			width: 200px;
+			height: 200px;
+			background-color:pink;
+			transition: background-color,top;
+			transition-duration: 5s;
+			/*transition-delay: 2s;*/
+			transition-timing-function: cubic-bezier(.8,.1,.1,.8);
+			/*transition-timing-function:ease-in;*/
+			position: relative;
+			top:0px;
+
+		}
+		div:hover{
+			background color: red;
+			top: 200px;
+
+		}
+</style>
+</head>
+<body>
+	<div class="parent"></div>
+		<div class="child">
+			
+		</div>
+	
+</div>
+
+</body>
+</html>

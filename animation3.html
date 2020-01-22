@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lightsky</title>
+	<style>
+	body{
+			width: 200vh;
+			height: 100vh;
+			background: red;
+			margin: 0px;
+			padding: 0px;
+			/*animation-name: width;
+			animation-duration: 10s;*/
+			background:linear-gradient(royalblue,lightyellow,green);
+
+		}
+		.sun{
+		width:100px;
+		height: 100px;
+		border-radius: 50%;
+		position: absolute;
+		top: 100px;
+		right: 100px;
+		box-shadow: 0 0 10px 4px #f1f1f1;
+		background: linear-gradient(40deg,yellow,#fff)
+	}
+	.birds{
+		border-radius: 50%
+		background: black;
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		animation-name: fly;
+		animation-iteration-count: infinite;
+
+	}
+	.trees{
+		position: relative;
+		height: 10px;
+		width: 2px;
+		bottom: 100px;
+		left:100px;
+		background:linear-gradient();
+
+
+	}
+	.bird1{
+	top: 100px;
+	left:  200px;
+	animation-duration: 5s;}
+
+ .star2{
+	top: 200px;
+	left: 500px;
+	animation-duration: 2s;
+}
+.star3{
+	top: 500px;
+	padding-left: 500px;
+	animation-duration: 6s;
+}
+.star4{
+	top: 300px;
+	right: 30px;
+	animation-duration: 5s;
+}
+.star5{
+	top: 250px;
+	right: 50px;
+	animation-duration: 2s;
+}
+@keyframes fly{
+	0%{box-shadow: 2px 3px 5px #fff}
+	50%{box-shadow: 4px 4px 2px #fff}
+	100%{box-shadow:  4px  2px 3px #fff}
+}
+.car2{
+	animation-duration: 15s;
+ 				position: relative;
+ 				top: 200px;
+ 				animation-name: car2;
+ 				
+ 			}
+ 			@keyframes car2{
+ 				0%{left: 100%px;}
+ 				50%{left:100%;}
+ 				0%{left: 100px;}
+ 			}
+ 			.cow{
+ 				position: relative;
+ 				top: -200px;
+ 				animation-name:cow;
+
+
+ 			}
+
+	</style>
+
+</head>
+<body>
+	<div class="sun"></div>
+	<div class="bird1 birds"></div>
+	<div class="tree trees"></div>
+	<div class="star3 stars"></div>
+	<div class="star3 satrs"></div>
+	<div class="star4 stars"></div>
+	<div class="star5 stars"></div>
+	<div class="car2"><img src="car2.gif" width="506px" height="506px"></div>
+	<div class="hen"><img src="cow.gif" width="220" height="271"></div>
+ 
+
+</body>
+</html>
